@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Fondo general con degradado */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Barra de navegación fija */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #0d47a1;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  nav h1 {
+    font-size: 1.5em;
+    display: inline;
+  }
+  
+  nav i {
+    margin-right: 8px;
+    color: #bbdefb;
+  }
+  
+  /* Encabezado principal */
+  header {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeInDown 1s ease;
+  }
+  
+  header h2 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #e3f2fd;
+  }
+  
+  /* Secciones */
+  section {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeInUp 0.8s ease;
+  }
+  
+  section:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  h2 {
+    color: #1565c0;
+    margin-bottom: 15px;
+    border-left: 6px solid #bbdefb;
+    padding-left: 10px;
+    font-size: 1.4em;
+  }
+  
+  /* Listas */
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: square;
+  }
+  
+  ul li {
+    margin-bottom: 6px;
+  }
+  
+  /* Pie de página */
+  footer {
+    text-align: center;
+    padding: 25px 15px;
+    background-color: #f1f1f1;
+    color: #555;
+    font-size: 0.9em;
+    margin-top: 40px;
+  }
+  
+  /* Animaciones */
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
